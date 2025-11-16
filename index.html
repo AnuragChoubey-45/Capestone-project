@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000; 
+      color: white;
+      padding: 10px 40px;
+    }
+
+    #logo{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff; 
+    }
+
+    
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #contact-button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #contact-button:hover {
+      background-color: #0088cc;
+    }
+
+    .login a {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: white;
+    }
+
+    .login a:hover {
+      color: #00aaff;
+    }
+    #contact-button a:hover{
+        color: #00aaff;
+    }
+    #page1 {
+  display: flex;
+  align-items: center;          
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 0 100px;
+  min-height: 400px;   
+  background-color: lightblue;       
+  margin: 10px;  
+  margin-bottom: 0px;
+}
+
+
+#page1 > div:first-child {
+  max-width: 450px;
+}
+
+
+#dashboard {
+  background-image: url('2799912.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 480px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  flex-shrink: 0;              
+}
+
+
+#button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#button:hover {
+  background-color: #0088cc;
+}
+#features {
+  display: flex;
+  justify-content: center;
+  gap: 100px;  
+  background-color: mintcream;
+  
+  
+  height: 370px;
+  width: auto;
+  margin-top: 0px;
+  
+  
+}
+.box1, .box2, .box3 {
+  background-color: white;
+  width: 300px;
+  border: 2px solid black;
+  height: 300px;
+  margin-top: 40px;
+  
+}
+.box2 img{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-left: 80px;
+
+}
+.box3 img{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 57px;
+}
+.box3 p{
+  line-height: 30px;
+  text-align: center;
+}
+
+    
+      
+      
+    
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    
+    <div id="logo">Echo</div>
+
+  
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="insights.html">Insights</a>
+      <a href="trends.html">Trends</a>
+      <a href="recommendation.html">Recommendations</a>
+    </div>
+
+   
+    <div id="contact">
+      <button id="contact-button">Contact Us</button>
+      <p>1800-1567-1345</p>
+      <div class="login"><a href="login.html">Login</a></div>
+    </div>
+       
+  </div>
+  <div id="page1">
+    <div class="text-part">
+      <h1>Hear Your Digital Echo — Reflect on How You Spend Your Time Online</h1>
+      <p>Echo helps you to analyze your screen habbits,visualize time across diffrent contents and build a balanced digital life.</p>
+      <div id="button">Start Tracking</div>
+    </div>
+    
+    <div id="dashboard"><img src="" alt=""></div>
+  </div>
+  
+  <div id="features">
+    <h2 style="background-color: mintcream;">Features</h2>
+    <div class="box1">
+      <img src="analytics.png" alt="" style="width: 40%; height: auto; margin: auto;">
+      <h4 style="margin-left: 10px;">Usage Analytics</h4>
+      <p style="margin: auto; line-height: 30px; text-align: center;">Track how much time you spend on diffrent platforms and improve your digital habbits</p>
+    </div>
+    <div class="box2">
+      <img src="app cat.png" alt="">
+      <h4 style="margin-left: 10px;">App Categorization</h4>
+      <p style="line-height: 30px; text-align: center;">Let echo monoitor your usage on every scroll.</p>
+
+    </div>
+    <div class="box3">
+      <img src="trends.jpg" alt="">
+      <h4 style="margin-left: 10px; margin-top: 40px;">Trends & Recommendations</h4>
+      <p>Get instant reports and visual graphs with proper analysis and suggestions</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+

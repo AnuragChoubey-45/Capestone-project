@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Time Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: mintcream;
+            color: #333;
+        }
+
+        
+       #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000; 
+      color: white;
+      padding: 10px 40px;
+    }
+
+    #logo{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff; 
+    }
+
+    
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #contact-button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #contact-button:hover {
+      background-color: #0088cc;
+    }
+
+    .login a {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: white;
+    }
+
+    .login a:hover {
+      color: #00aaff;
+    }
+    #contact-button a:hover{
+        color: #00aaff;
+    }
+
+        
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            background-color: lightblue;
+        }
+
+        .bar-container {
+            width: 100%;
+            background-color: #e1ecff;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .bar {
+            height: 20px;
+            background-color: #1e3a8a;
+            border-radius: 8px;
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <div id="header">
+    
+    <div id="logo">Echo</div>
+
+  
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="insights.html">Insights</a>
+      <a href="trends.html">Trends</a>
+      <a href="recommendation.html">Recommendations</a>
+    </div>
+
+   
+    <div id="contact">
+      <button id="contact-button">Contact Us</button>
+      <p>1800-1567-1345</p>
+      <div class="login"><a href="login.html">Login</a></div>
+    </div>
+       
+  </div>
+    <div class="container">
+
+        
+        <div class="card">
+            <h2>📊 Daily Screen Time Summary</h2>
+            <p>Total screen time today</p>
+            <h1>3h 45min</h1>
+
+            <p>Average screen time (7 days)</p>
+            <h1>4h 05min</h1>
+
+            <p style="color: #008000; font-weight: bold;">
+                Today’s screen time is slightly lower than the weekly average ✔
+            </p>
+        </div>
+
+        
+        <div class="card">
+            <h2>🏆 Top 3 Apps Used Today</h2>
+            <ol>
+                <li>Social Media — 1h 30min</li>
+                <li>Productivity — 1h 15min</li>
+                <li>Entertainment — 1h 00min</li>
+            </ol>
+        </div>
+
+       
+        <div class="card">
+            <h2>📱 Usage Breakdown</h2>
+
+            <div class="grid">
+
+                <div>
+                    <h3>Social Media</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 75%;"></div>
+                    </div>
+                    <p>1h 30min</p>
+                </div>
+
+                <div>
+                    <h3>Productivity</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 65%;"></div>
+                    </div>
+                    <p>1h 15min</p>
+                </div>
+
+                <div>
+                    <h3>Entertainment</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 55%;"></div>
+                    </div>
+                    <p>1h 00min</p>
+                </div>
+
+                <div>
+                    <h3>Others</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 40%;"></div>
+                    </div>
+                    <p>45min</p>
+                </div>
+
+                <div>
+                    <h3>Health & Fitness</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 30%;"></div>
+                    </div>
+                    <p>30min</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

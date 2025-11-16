@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo | Trends</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+      color: #1a1a1a;
+    }
+
+    
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000; 
+      color: white;
+      padding: 10px 40px;
+    }
+
+    #logo{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff; 
+    }
+
+    
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #contact-button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #contact-button:hover {
+      background-color: #0088cc;
+    }
+
+    .login a {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: white;
+    }
+
+    .login a:hover {
+      color: #00aaff;
+    }
+    #contact-button a:hover{
+        color: #00aaff;
+    }
+   
+    .header {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .header h1 {
+      color: #007bff;
+      font-size: 2em;
+    }
+
+    .header p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    
+    .trends {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px 80px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    
+    .bar {
+      background-color: #e1ecff;
+      border-radius: 5px;
+      height: 20px;
+      margin: 8px 0;
+      position: relative;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      background-color: #007bff;
+    }
+
+    .label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e9f2ff;
+      color: #555;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="header">
+    
+    <div id="logo">Echo</div>
+
+  
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="insights.html">Insights</a>
+      <a href="trends.html">Trends</a>
+      <a href="recommendation.html">Recommendations</a>
+    </div>
+
+   
+    <div id="contact">
+      <button id="contact-button">Contact Us</button>
+      <p>1800-1567-1345</p>
+      <div class="login"><a href="login.html">Login</a></div>
+    </div>
+       
+  </div>
+
+
+  <div class="header">
+    <h1>Digital Trends Overview</h1>
+    <p>Here’s how your digital habits have evolved this week 📊</p>
+  </div>
+
+  
+  <section class="trends">
+
+   
+    <div class="card">
+      <h3>📱 Content Type Consumption</h3>
+      <div class="label"><span>Learning Videos</span><span>80%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+
+      <div class="label"><span>Entertainment</span><span>65%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+
+      <div class="label"><span>Social Media</span><span>50%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:50%"></div></div>
+
+      <div class="label"><span>News & Articles</span><span>40%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:40%"></div></div>
+    </div>
+
+    <div class="card">
+      <h3>⏰ Screen Time Distribution</h3>
+      <div class="label"><span>Morning</span><span>25%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:25%"></div></div>
+
+      <div class="label"><span>Afternoon</span><span>35%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:35%"></div></div>
+
+      <div class="label"><span>Evening</span><span>30%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:30%"></div></div>
+
+      <div class="label"><span>Night</span><span>10%</span></div>
+      <div class="bar"><div class="bar-fill" style="width:10%"></div></div>
+    </div>
+
+    
+    <div class="card">
+      <h3>⭐ Weekly Focus Level</h3>
+      <p>Your average focus improved by <strong>12%</strong> this week. Keep minimizing distractions during work hours!</p>
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2025 Echo | Understanding your digital world
+  </footer>
+
+</body>
+</html>

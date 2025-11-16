@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Echo Recommendations</title>
+<style>
+  #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000; 
+      color: white;
+      padding: 10px 40px;
+    }
+
+    #logo{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff; 
+    }
+
+    
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #contact-button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #contact-button:hover {
+      background-color: #0088cc;
+    }
+
+    .login a {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: white;
+    }
+
+    .login a:hover {
+      color: #00aaff;
+    }
+    #contact-button a:hover{
+        color: #00aaff;
+    }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: mintcream;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: lightblue;
+  }
+
+  .card h2 {
+    margin: 0 0 10px;
+    color: #222;
+  }
+
+  .card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #1a73e8;
+  }
+
+</style>
+</head>
+<body>
+  <div id="header">
+    
+    <div id="logo">Echo</div>
+
+  
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="insights.html">Insights</a>
+      <a href="trends.html">Trends</a>
+      <a href="recommendation.html">Recommendations</a>
+    </div>
+
+   
+    <div id="contact">
+      <button id="contact-button">Contact Us</button>
+      <p>1800-1567-1345</p>
+      <div class="login"><a href="login.html">Login</a></div>
+    </div>
+       
+  </div>
+  <div class="container">
+    <h1>Your Daily Recommendations</h1>
+
+    <div class="card">
+      <h2>📱 Reduce Screen Time</h2>
+      <p>You spent <span class="highlight">2.5 hours</span> extra on your phone today. Try taking a 10-minute break every hour.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌙 Sleep Improvement</h2>
+      <p>Using your phone late night increases stress. Avoid screens at least <span class="highlight">1 hour</span> before sleeping.</p>
+    </div>
+
+    <div class="card">
+      <h2>💼 Productivity Boost</h2>
+      <p>You unlocked your phone more frequently during work hours. Try enabling <span class="highlight">Focus Mode</span>.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Custom Tip</h2>
+      <p>Maintain a daily limit for social media apps to improve digital well-being.</p>
+    </div>
+  </div>
+</body>
+</html>
