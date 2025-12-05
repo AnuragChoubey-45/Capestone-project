@@ -1,0 +1,143 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+      color: #1a1a1a;
+    }
+
+    
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000; 
+      color: white;
+      padding: 10px 40px;
+    }
+
+    #logo{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00aaff; 
+    }
+
+    
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #contact-button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #contact-button:hover {
+      background-color: #0088cc;
+    }
+
+    .login a {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: white;
+    }
+
+    .login a:hover {
+      color: #00aaff;
+    }
+    #contact-button a:hover{
+        color: #00aaff;
+    }
+   
+    .header {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .header h1 {
+      color: #007bff;
+      font-size: 2em;
+    }
+
+    .header p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    
+    .trends {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px 80px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    
+    .bar {
+      background-color: #e1ecff;
+      border-radius: 5px;
+      height: 20px;
+      margin: 8px 0;
+      position: relative;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      background-color: #007bff;
+    }
+
+    .label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e9f2ff;
+      color: #555;
+      margin-top: 40px;
+    }

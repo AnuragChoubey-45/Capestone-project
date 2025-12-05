@@ -1,0 +1,104 @@
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f4f6f9;
+        }
+        #header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:#000;
+            color:#fff;
+            padding:12px 37px;
+        }
+        #logo{
+            font-size:1.45em;
+            font-weight:bold;
+        }
+        .nav-links{
+            display:flex;
+            gap:27px;
+        }
+        .nav-links a{
+            text-decoration:none;
+            color:#fff;
+            transition:.25s;
+            font-weight:500;
+        }
+        .nav-links a:hover{
+            color:#00aaff;
+        }
+        #contact{
+            display:flex;
+            align-items:center;
+            gap:17px;
+        }
+        #contact-button{
+            background:#00aaff;
+            border:none;
+            padding:8px 16px;
+            border-radius:6px;
+            cursor:pointer;
+            color:#fff;
+            font-weight:600;
+        }
+        #contact-button:hover{
+            background:#0090d1;
+        }
+        .login a{
+            color:#fff;
+            text-decoration:none;
+        }
+        .login a:hover{
+            color:#00aaff;
+        }
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:82vh;
+        }
+        .box-login{
+            background:#fff;
+            border:1px solid #dcdcdc;
+            width:325px;
+            padding:29px;
+            border-radius:10px;
+        }
+        .box-login h2{
+            text-align:center;
+            margin:0 0 17px;
+            font-size:22px;
+            color:#333;
+        }
+        .box-login input{
+            width:100%;
+            padding:12px;
+            border-radius:6px;
+            border:1px solid #c8c8c8;
+            margin-bottom:11px;
+            font-size:15px;
+        }
+        .box-login button{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:6px;
+            background:#0077cc;
+            color:#fff;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+        .box-login button:hover{
+            background:#0060a8;
+        }
+        .smalltxt{
+            text-align:center;
+            margin-top:14px;
+            font-size:14px;
+        }
+        .smalltxt a{
+            text-decoration:none;
+            color:#0077cc;
+        }
